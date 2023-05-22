@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {useGlobalContext} from "../../context/globalContext";
 import History from "../../History/History";
 import {InnerLayout} from "../../styles/Layouts";
-import {dollar} from "../../utils/Icons";
 import Chart from "../Chart/Chart";
 
 function Dashboard() {
@@ -32,21 +31,15 @@ function Dashboard() {
             <div className="amount-con">
               <div className="income">
                 <h2>Total Income</h2>
-                <p>
-                  {dollar} {totalIncome()}
-                </p>
+                <p>₹ {totalIncome()}</p>
               </div>
               <div className="expense">
                 <h2>Total Expense</h2>
-                <p>
-                  {dollar} {totalExpenses()}
-                </p>
+                <p>₹ {totalExpenses()}</p>
               </div>
               <div className="balance">
                 <h2>Total Balance</h2>
-                <p>
-                  {dollar} {totalBalance()}
-                </p>
+                <p>₹ {totalBalance()}</p>
               </div>
             </div>
           </div>
