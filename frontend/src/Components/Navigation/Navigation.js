@@ -10,8 +10,8 @@ function Navigation({active, setActive}) {
       <div className="user-con">
         <img src={avatar} />
         <div className="text">
-          <h2>Mike</h2>
-          <p>Your money</p>
+          <h2>Niya</h2>
+          <p>Your Finances </p>
         </div>
       </div>
       <ul className="menu-items">
